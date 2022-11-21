@@ -7,8 +7,10 @@ const App = () => {
   };
   return (
     <div id="main">
-      <h1 id="marco-polo">{text ? "Macro" : "Polo"}</h1>
-      <button onClick={handleChange}>{text ? "Polo" : "Macro"}</button>
+      <h1 id="marco-polo">{text ? "Marco" : "Polo"}</h1>
+      <button id="marco-polo-toggler" onClick={handleChange}>
+        {text ? "Polo" : "Marco"}
+      </button>
     </div>
   );
 };
